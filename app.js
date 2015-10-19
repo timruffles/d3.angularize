@@ -82,7 +82,7 @@ function main() {
         locals: {
           $render: render,
         },
-        templateUrl: "/template.html",
+        templateUrl: "template.html",
         injector: "demo" + i,
         controller: DemoCtrl,
         controllerAs: "ctrl",
