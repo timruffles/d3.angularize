@@ -24,6 +24,8 @@ d3.select("body")
     modules: [],
     // either a function or a name defined within one of the modules of the injector
     controller: SomeCtrl,
+    // provide a template. (optional). If no template supplied, HTML content of node will be compiled
+    templateUrl: "template.html",
     // local data for the controller, beyond $data, $index, $element and $scope
     locals: {
     },
