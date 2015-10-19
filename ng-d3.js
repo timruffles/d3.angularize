@@ -3,7 +3,7 @@
 var injectors = {};
 
 /**
- * angularises the content of an element (either the existing
+ * angularizes the content of an element (either the existing
  * content or loaded template).
  *
  * ## options
@@ -16,9 +16,9 @@ var injectors = {};
  *   {title: "two"},
  * ])
  * // you'd only want to call this on the enter selection as
- * // otherwise you'll have very confusing bugs
+ * // otherwize you'll have very confusing bugs
  * .enter()
- * .angularise(function(d, i) {
+ * .angularize(function(d, i) {
  *   return {
  *     // provide a injector name to create separate angular 'apps'
  *     // that have distinct digest loops.
@@ -35,7 +35,7 @@ var injectors = {};
  *
  *
  */
-d3.selection.prototype.angularise = function(fn) {
+d3.selection.prototype.angularize = function(fn) {
    this.each(function(d, i) {
      var el = this;
      var opts = fn.call(el, d, i);

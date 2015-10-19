@@ -1,5 +1,5 @@
 /**
- * demo using d3, d3.angularise()
+ * demo using d3, d3.angularize()
  */
 angular.module("demo", [])
 .controller("DemoCtrl", DemoCtrl)
@@ -77,7 +77,7 @@ function main() {
     })
     .attr("y", r/2)
     .append("xhtml:body")
-    .angularise(function(d, i) {
+    .angularize(function(d, i) {
       return {
         locals: {
           $render: render,
