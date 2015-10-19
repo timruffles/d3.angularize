@@ -3,7 +3,7 @@
 angularizes the content of an element (either the existing
 content or loaded template).
 
-## options
+## Example
 
 ```javascript
 d3.select("body")
