@@ -112,7 +112,8 @@ function DemoCtrl(
   this.data = $data;
 
   this.updated = function() {
-    $render(); 
+    // TODO works better locally with sync call
+    window.requestAnimationFrame($render);
   }
 
   $scope.$watch(function() {
