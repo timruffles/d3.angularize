@@ -1,7 +1,8 @@
 # d3.angularize
 
-angularizes the content of an element (either the existing
-content or loaded template).
+Inject Angular into D3. Get the power of Angular within your D3 visualisations!
+
+`d3.angularize` angularizes the content of an element (either the existing content or loaded template).
 
 ## Example
 
@@ -31,4 +32,5 @@ d3.select("body")
     },
   };
 })
+```
 
