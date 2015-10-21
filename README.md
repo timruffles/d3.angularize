@@ -34,3 +34,28 @@ d3.select("body")
 })
 ```
 
+## Install
+
+### npm/browserify
+
+```sh
+npm install --save d3.angularize
+```
+
+Then 
+
+```js
+var angularize = require("d3.angularize");
+var d3 = require("d3");
+
+angularize.plugin(d3);
+```
+
+### Plain JS
+
+```html
+<script src="d3.js"></script>
+<script src="d3.angularize.js"></script>
+```
+
+Then you're ready to go!

@@ -3,6 +3,19 @@
 
 var injectors = {};
 
+if(typeof module === "undefined") {
+  if(typeof d3 === "undefined") {
+    throw new Error("Please include d3 before including d3.angularize");
+  } else {
+    d3.selection.prototype.angularize = angularize;
+  }
+} else {
+  module.exports = exports = angularize;
+  angularize.plugin = function(d3) {
+    d3.selection.prototype.angularize = angularize;
+  };
+}
+
 /**
  * angularizes the content of an element (either the existing
  * content or loaded template).
@@ -24,7 +37,7 @@ var injectors = {};
  * },
  *
  */
-d3.selection.prototype.angularize = function(fn) {
+function angularize(fn) {
 
  this.each(function(d, i) {
    var el = this;
