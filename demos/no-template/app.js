@@ -82,8 +82,13 @@ function visualise(injector) {
     })
     .attr("y", r/2)
     .append("xhtml:body")
+    /*
+     * rather than having angular load a template,
+     * we've used existing DOM (here we're doing it
+     * as a string, but it really doesn't matter. whatever
+     * APIs you like!)
+     */
     .html([
-      "<h1>Booted '{{ ctrl.name }}'</h1> ",
       "<h2>Digest count: {{ ctrl.totalDigests }}</h2>",
       "<form name='dataForm'>",
       "  <input type=range ",

@@ -1,0 +1,8 @@
+body {
+  font-family: sans-serif;
+  color: #fff;
+}
+
+[ng-controller~=DemoCtrl] {
+  color: #fff;
+}
