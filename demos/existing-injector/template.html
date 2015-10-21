@@ -1,9 +1,13 @@
 <h2>Digest count: {{ ctrl.totalDigests }}</h2>
 <form name='dataForm'>
-  <input type="range" 
+  <input type="number" 
          name="data"
          ng-model="ctrl.data.value"
          ng-change='ctrl.updated()'
+         min=0
+         max=100
+         required
+         step=10
          integer-value
          >
   {{ ctrl.data.value }}

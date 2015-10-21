@@ -91,7 +91,7 @@ function visualise(injector) {
     .html([
       "<h2>Digest count: {{ ctrl.totalDigests }}</h2>",
       "<form name='dataForm'>",
-      "  <input type=range ",
+      "  <input type=number min=0 max=100 step=10 ",
       "         name=data",
       "         ng-model=ctrl.data.value",
       "         ng-change='ctrl.updated()'",
